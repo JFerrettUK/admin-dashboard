@@ -3,15 +3,78 @@ body, html {
     width: 100%;
     margin: 0;
   }
-
+  
 .container {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     display: grid;
-    grid-template: 1fr 4fr / 1fr 1fr;
+    grid-template-columns: 300px 3fr;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-.navRow {
-    background-color: #0072ce;
-}
+    .column1 {
+        display: grid;
+        padding-left: 25px;
+        grid-template-columns: 50px 3fr;
+        background-color: #9b2626;
+        align-items: left;
+        color: white;
+    }
+
+        .logoCol {
+
+        }
+
+        .navCol {
+            display: grid;
+            grid-template-rows: 0.7fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 4fr;
+        }
+
+        .navCol > li {
+            list-style: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+    .column2 {
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+    }
+
+        .headerRow {
+            min-height: 250px;
+            display: grid;
+            grid-template-rows: 1.5fr 2fr;    
+        }
+
+            .searchRow {
+                background-color: #e9e9e9f2;
+            }
+
+            .adminRow {
+
+            }
+        
+        .contentRow {
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;    
+            background-color: #413b4bf2;
+        }
+
+            .projectsCol {
+
+            }
+
+            .announceCol {
+                background-color: #787085f2;
+                display: grid;
+                grid-template-rows: 1fr 1fr;      
+            }
+
+                .announcements {
+
+                }
+
+                .trending {
+                    background-color: #9990a7f2;
+                }
