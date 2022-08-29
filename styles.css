@@ -93,6 +93,8 @@ body, html {
                 padding-bottom: 30px;
                 align-items: center;
                 gap: 20px;
+                box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+
             }
 
                 .catPic2 {
@@ -105,7 +107,7 @@ body, html {
                 .hiMorgan {
                     display: grid;
                     grid-template-rows: 10px 20px;
-                    min-width: 220px;
+                    min-width: 280px;
                     gap: 5px;
                 }
 
@@ -136,21 +138,24 @@ body, html {
         }
 
             .projectsCol {
-                padding: 30px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
 
                 .subTitle{
                     font-weight: bold;
                     margin-bottom: 10px;
+                    font-size: 20px;
                 }
 
                 .projectContainer {
                     margin: auto;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 20px;
+                    gap: 15px;
                     height: 95%;
-                    padding-bottom: 20px;
                 }
 
                 .card {
@@ -174,6 +179,11 @@ body, html {
                         .projectText {
                             margin-top: 10px;
                             margin-bottom: 10px;
+                            font-size: 14px;
+                        }
+
+                        .announcementText, .projectText {
+                            color:#616161;
                         }
 
                         .projectTitle {
@@ -188,15 +198,42 @@ body, html {
                         }
 
             .announceCol {
-                background-color: #C2EFEB;
                 display: grid;
-                grid-template-rows: 1fr 1fr;      
+                grid-template-rows: 1fr 1fr;
+                padding-right: 15px;
+                padding-top: 30px;
+                padding-bottom: 30px;
             }
 
-                .announcements {
-
+                .announcementsCard {
+                    padding: 20px;
+                    display: grid;
+                    background-color: white;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    border-radius: 5px;
+                    background-color: white;
+                    grid-template-rows: 1fr 1fr .85fr;                
                 }
 
+                    .announcementTitle {
+                        font-weight: bold;
+                        min-width: 170px;
+                        padding: 5px;
+
+                    }
+
+                    .announcementText {
+                        font-size: 12px;
+                        padding: 5px;
+                    }
+
+                    .lineBreak {
+                        height: 1px;
+                        min-width: 170px;
+                        background-color: #331E36;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+
                 .trending {
-                    background-color: #331E36 ;
                 }
