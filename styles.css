@@ -15,9 +15,8 @@ body, html {
         display: grid;
         padding-left: 15px;
         grid-template-columns: 57px 3fr;
-        background-color: #268ed3;
+        background-color: #2C394B;
         color: white;
-        display: grid;
     }
 
         .logoCol {
@@ -63,7 +62,7 @@ body, html {
         .headerRow {
             display: grid;
             grid-template-rows: 60px 100px;
-            color: black;
+            color: white;
             font-weight: bold;
         }
 
@@ -72,6 +71,7 @@ body, html {
                 grid-template-columns: 0fr 4fr 1fr 30px 40px 115px 30px;
                 align-items: center;
                 align-content: center;
+                background-color: #334756;
                 justify-content: center;
                 padding-top: 20px;
                 padding-bottom: 10px;
@@ -90,10 +90,12 @@ body, html {
                 }
                 
                 .searchIcon {
-                    display: grid;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
+                    height: 25px;
+                    padding-right: 10px;
+                }   
+
+                                
+                .searchIcon2 {
                     height: 25px;
                 }   
 
@@ -113,21 +115,14 @@ body, html {
                     align-content: center;
                 }
 
-                .searchImg {
-                    display: grid;
-                    justify-content: right;
-                    padding-right: 10px;
-                }
-
             .adminRow {
-                background-color: #ffffff;
+                background-color: #334756;
                 display: grid;
                 grid-template-columns: 0fr 3fr 2fr 100px 100px 100px 30px;
                 padding-top: 20px;
                 padding-bottom: 30px;
                 align-items: center;
-                gap: 25px;
-                box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
+                gap: 20px;
                 padding-left: 30px;
             }
 
@@ -157,7 +152,7 @@ body, html {
                     height: 40px;
                     font-size: 14px;
                     font-weight: bold;
-                    background: #268ed3;
+                    background: #FF4C29;
                     border-radius: 999px;
                     color: #FFFFFF;
                     width: 100px;
@@ -168,8 +163,8 @@ body, html {
         .contentRow {
             display: grid;
             grid-template-columns: 3fr 1.3fr;    
-            background-color: #e1e6e9;
-            box-shadow: inset 0px 8px 7px -7px rgb(185, 186, 192);
+            background-color: #082032;
+            box-shadow: inset 0px 5px 7px -7px rgb(0, 0, 0);
         }
 
             .projectsCol {
@@ -178,10 +173,15 @@ body, html {
                 padding-top: 30px;
             }
 
-                .subTitle{
+                .announcementTitle, .projectTitle, .user {
+                    color: white;
+                }
+
+                .subTitle {
                     font-weight: bold;
                     margin-bottom: 10px;
                     font-size: 20px;
+                    color: #c7c7c7;
                 }
 
                 .projectContainer {
@@ -193,15 +193,14 @@ body, html {
 
                 .card {
                     display: grid;
-                    background-color: white;
+                    background-color: #334756;
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     border-radius: 5px;
-                    background-color: white;
                     grid-template-columns: 10px 12fr;
                 }
 
                 .cardColumnLeft {
-                    background-color: rgb(241, 185, 0);
+                    background-color: #FF4C29;
                     border-top-left-radius: 5px;
                     border-bottom-left-radius: 5px;
                 }
@@ -215,14 +214,12 @@ body, html {
                             margin-top: 10px;
                             margin-bottom: 10px;
                             font-size: 14px;
-                        }
-
-                        .projectText {
-                            color:#616161;
+                            color:#c7c7c7;
                         }
 
                         .projectTitle {
                             font-weight: bold;
+                            color: white;
                         }
 
                         .projectIcons {
@@ -246,10 +243,9 @@ body, html {
                 .announcementsCard {
                     padding: 20px;
                     display: grid;
-                    background-color: white;
+                    background-color: #334756;
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     border-radius: 5px;
-                    background-color: white;
                     grid-template-rows: 1fr 1fr .85fr;   
                 }
 
@@ -263,7 +259,7 @@ body, html {
                     .announcementText {
                         font-size: 12px;
                         padding: 5px;
-                        color:#616161;
+                        color:#c7c7c7;
                     }
 
                     .lineBreak {
@@ -281,10 +277,9 @@ body, html {
                     .trendingCard {
                         padding: 20px;
                         display: grid;
-                        background-color: white;
+                        background-color: #334756;
                         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                         border-radius: 5px;
-                        background-color: white;
                         grid-template-rows: 1fr 1fr 1fr 1fr;  
                         gap: 20px;
                         justify-content: baseline;
@@ -307,5 +302,5 @@ body, html {
 
                         .subUser {
                             font-size: 14px;
-                            color:#616161;
+                            color:#c7c7c7;
                         }
