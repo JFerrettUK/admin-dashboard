@@ -9,24 +9,20 @@ body, html {
     grid-template-columns: 300px 3fr;
     font-family: "Open Sans", Helvetica, sans-serif;
     height: 100%;
-
 }
 
     .column1 {
         display: grid;
-        padding-left: 25px;
+        padding-left: 15px;
         grid-template-columns: 57px 3fr;
         background-color: #268ed3;
         color: white;
+        display: grid;
     }
-
-        h1 {
-            padding-top: 20px;
-            font-size: 28px;
-        }
 
         .logoCol {
             display: grid;
+            justify-items: center;
             align-items: center;
             grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px;
         }
@@ -37,11 +33,27 @@ body, html {
             grid-template-rows: 130px 50px 50px 50px 50px 50px 50px 40px 50px 50px 50px;
         }
 
-        .navCol > li {
-            list-style: none;
-            font-weight: bold;
-            font-size: 24px;
-        }
+            .dashboardLogo {
+                height: 50px;
+                padding-top: 20px;
+                fill: rgb(255, 255, 255);
+            }
+
+            .dashIcon {
+                height: 30px;
+                fill: white;
+            }
+
+            h1 {
+                padding-top: 20px;
+                font-size: 28px;
+            }
+
+            .navCol > li {
+                list-style: none;
+                font-weight: bold;
+                font-size: 24px;
+            }
 
     .column2 {
         display: grid;
@@ -57,7 +69,7 @@ body, html {
 
             .searchRow {
                 display: grid;
-                grid-template-columns: 0fr 4fr 1fr 0.5fr 0.5fr 2fr 30px;
+                grid-template-columns: 0fr 4fr 1fr 30px 40px 115px 30px;
                 align-items: center;
                 align-content: center;
                 justify-content: center;
@@ -77,9 +89,28 @@ body, html {
                     background-color: #ffffff;
                 }
                 
-                .search, .bellPic, .catPic, .titleText {
+                .searchIcon {
                     display: grid;
                     justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    height: 25px;
+                }   
+
+                .avatarSearch1 {
+                    height: 40px;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                }
+
+                .avatarSearch2 {
+                    height: 60px;
+                    display: grid;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
                 }
 
                 .searchImg {
@@ -91,11 +122,11 @@ body, html {
             .adminRow {
                 background-color: #ffffff;
                 display: grid;
-                grid-template-columns: 0fr 3fr 2fr 1fr 1fr 1fr 30px;
+                grid-template-columns: 0fr 3fr 2fr 100px 100px 100px 30px;
                 padding-top: 20px;
                 padding-bottom: 30px;
                 align-items: center;
-                gap: 20px;
+                gap: 25px;
                 box-shadow: 0 4px 2px -2px rgb(0, 0, 0);
                 padding-left: 30px;
             }
@@ -111,7 +142,7 @@ body, html {
                     align-items: center;
                     grid-template-rows: 10px 20px;
                     min-width: 280px;
-                    gap: 5px;
+                    gap: 7px;
                 }
 
                     .smolText {
@@ -126,7 +157,7 @@ body, html {
                     height: 40px;
                     font-size: 14px;
                     font-weight: bold;
-                    background: #41337A;
+                    background: #268ed3;
                     border-radius: 999px;
                     color: #FFFFFF;
                     width: 100px;
@@ -143,7 +174,7 @@ body, html {
 
             .projectsCol {
                 padding-left: 15px;
-                padding-right: 15px;
+                padding-right: 25px;
                 padding-top: 30px;
             }
 
@@ -157,7 +188,7 @@ body, html {
                     margin: auto;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
-                    gap: 15px;
+                    gap: 25px;
                 }
 
                 .card {
@@ -196,10 +227,14 @@ body, html {
 
                         .projectIcons {
                             display: grid;
-                            grid-template-columns: 5fr 1fr 1fr 1fr;
-                            align-items: center;
-                            justify-content: right;
+                            grid-template-columns: 5fr 20px 20px 20px;
+                            gap: 20px;
                         }
+
+                            .projIcon {
+                                
+                                height: 22px;
+                            }
 
             .announceCol {
                 display: grid;
